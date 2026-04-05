@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qaulan Sadida | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navigation -->
     <nav>
         <div class="logo">Qaulan.</div>
         <ul class="nav-links">
@@ -21,44 +17,42 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
             <i class="fas fa-bars"></i>
-        </div>
+        </button>
     </nav>
 
-    <!-- Hero Section -->
     <section id="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Qaulan Sadida</span></h1>
-            <h2>Informatics Student & Developer</h2>
-            <p>I build web applications and deep learning models. Passionate about solving problems with code.</p>
+            <p class="eyebrow">Portfolio</p>
+            <h1>Qaulan Sadida</h1>
+            <h2>Informatics Student and Developer</h2>
+            <p class="hero-summary">I build practical web applications and machine learning solutions with a focus on usability, clean implementation, and solving real problems.</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn primary-btn">View My Work</a>
-                <!-- Link this to your actual PDF file path -->
-                <a href="assets/Qaulan_Sadida_CV.pdf" target="_blank" class="btn secondary-btn">Download CV</a>
+                <a href="assets/CV_Qaulan eng.pdf" target="_blank" rel="noopener noreferrer" class="btn secondary-btn">Download CV</a>
             </div>
             <div class="social-icons">
-                <a href="https://github.com/qaulanolan" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/qaulan-sadida" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:qaulans6@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/qaulanolan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/qaulan-sadida" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:qaulans6@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
 
-    <!-- About & Skills Section -->
     <section id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
                     <h2 class="section-title">About Me</h2>
                     <p>I am a Bachelor of Informatics student at <strong>Telkom University</strong> with a GPA of <strong>3.77</strong>.</p>
-                    <p>I possess a strong foundation in programming and problem-solving. My work ranges from building full-stack web applications using Vue.js to developing AI models for cyberbullying detection. I am capable of working independently or collaborating in teams to deliver effective technical solutions.</p>
+                    <p>I have hands-on experience across software engineering and applied AI, from building internal web platforms with Vue.js and Quarkus to developing recommendation and cyberbullying detection systems. I work well independently and in collaborative team environments.</p>
                 </div>
                 <div class="skills-box">
                     <h3>Tech Stack</h3>
                     <div class="tags">
                         <span>Vue.js</span>
-                        <span>Flutter (Dart)</span>
+                        <!-- <span>Flutter</span> -->
                         <span>Python</span>
                         <span>PostgreSQL</span>
                         <span>MySQL</span>
@@ -72,88 +66,116 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <h2 class="section-title center">Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">Jul 2025 – Sep 2025</div> <!-- Note: Check if this date is correct in your CV! -->
+                <div class="timeline-date">Jul 2025 - Sep 2025</div>
                 <div class="timeline-content">
                     <h3>Web Application Developer Intern</h3>
                     <h4>PLN Icon Plus</h4>
-                    <p>Developed an internal web application for automating official document generation using Vue.js, Quarkus, and PostgreSQL. Collaborated in a team to deploy a functional system.</p>
+                    <p>Developed an internal web application to automate official document generation using Vue.js, Quarkus, and PostgreSQL. Worked in a team environment to deliver a production-ready internal tool.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2 class="section-title center">Featured Projects</h2>
         <div class="project-grid">
-            
-            <!-- Project 1: LearnHub -->
             <div class="card">
-                <div class="card-img" style="background-image: url('assets/images/learnhub.jpg');"></div>
+                <div class="card-img project-book">
+                    <img src="assets/projects/book-recommender.png" alt="Book Recommender Site preview">
+                    <span>Semantic Book Discovery</span>
+                </div>
                 <div class="card-content">
-                    <h3>LearnHub</h3>
-                    <span class="category">Mobile App Development</span>
-                    <p>Developed the mobile frontend of a multi-platform learning consultation application. Built as part of a 5-member team.</p>
+                    <h3>Book Recommender Site</h3>
+                    <span class="category">Recommendation System / NLP</span>
+                    <p>Implemented a semantic book recommendation system using sentence-transformer embeddings and delivered it through a Streamlit web interface.</p>
                     <div class="tech-stack-mini">
-                        <span>Flutter</span>
-                        <span>Dart</span>
+                        <span>Python</span>
+                        <span>Sentence Transformers</span>
+                        <span>Streamlit</span>
                     </div>
                     <div class="links">
-                        <a href="https://github.com/qaulanolan/YOUR_REPO_NAME" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/Jihanalyh/Sisrek_Kelompok5_TugasCLO3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 2: Car Classification -->
             <div class="card">
-                <div class="card-img" style="background-image: url('assets/images/car-class.jpg');"></div>
+                <div class="card-img project-car">
+                    <img src="assets/projects/car-classification.png" alt="Car Image Classification preview">
+                    <span>Image Classification Demo</span>
+                </div>
                 <div class="card-content">
                     <h3>Car Image Classification</h3>
                     <span class="category">Digital Image Processing</span>
-                    <p>Built an image-based car classification system using KNN (K-Nearest Neighbors) algorithm with a simple Streamlit interface.</p>
+                    <p>Built an image-based car classification system using KNN with a simple Streamlit interface for prediction and exploration.</p>
                     <div class="tech-stack-mini">
                         <span>Python</span>
                         <span>KNN</span>
                         <span>Streamlit</span>
                     </div>
                     <div class="links">
-                        <a href="https://github.com/qaulanolan/YOUR_REPO_NAME" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://github.com/qaulanolan/tubes-pcd" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 3: Cyberbullying Detection -->
             <div class="card">
-                <div class="card-img" style="background-image: url('assets/images/cyberbullying.jpg');"></div>
+                <div class="card-img project-cyber">
+                    <img src="assets/projects/cyberbully-detection.png" alt="Multimodal Cyberbullying Detection preview">
+                    <span>Multimodal AI Research</span>
+                </div>
                 <div class="card-content">
                     <h3>Multimodal Cyberbullying Detection</h3>
                     <span class="category">Deep Learning / Final Project</span>
-                    <p>Designed and implemented a multimodal deep learning model for detecting cyberbullying on social media, emphasizing feature learning and interpretability.</p>
+                    <p>Designed and implemented a multimodal deep learning model for detecting cyberbullying on social media, with an emphasis on feature learning and interpretability.</p>
                     <div class="tech-stack-mini">
                         <span>Deep Learning</span>
                         <span>Python</span>
                         <span>NLP</span>
                     </div>
                     <div class="links">
-                        <a href="https://github.com/qaulanolan/YOUR_REPO_NAME" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/qaulanolan/Tugas-Akhir" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="contact">
+        <div class="container contact-shell">
+            <div class="contact-intro">
+                <h2 class="section-title">Contact</h2>
+                <p>I am currently open to internship and entry-level software engineering opportunities. If you are hiring or would like to discuss a project, feel free to reach out.</p>
+            </div>
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:qaulans6@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>qaulans6@gmail.com</p>
+                </a>
+                <a class="contact-card" href="https://linkedin.com/in/qaulan-sadida" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/qaulan-sadida</p>
+                </a>
+                <a class="contact-card" href="https://github.com/qaulanolan" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>github.com/qaulanolan</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>Bandung, Indonesia | +62 813-9423-4964</p>
-        <p>&copy; 2025 Qaulan Sadida. Built from scratch.</p>
+        <p>Bandung, Indonesia | 0813-9423-4964</p>
+        <p>&copy; 2026 Qaulan Sadida.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
